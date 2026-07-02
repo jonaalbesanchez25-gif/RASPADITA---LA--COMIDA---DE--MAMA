@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Raspá y Ganá | La Comida de Mamá</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="brand">🍽️ LA COMIDA DE MAMÁ</div>
+    <p class="tag">Hecho con amor, como en casa</p>
+    <h1>¡Raspá y ganá!</h1>
+    <p class="intro">Deslizá tu dedo sobre la tarjeta y descubrí tu premio.</p>
+
+    <section class="card" id="card">
+      <div class="prize" id="prize">
+        <div class="emoji" id="emoji">🎁</div>
+        <h2 id="prizeTitle">¡Tu premio!</h2>
+        <p id="prizeText"></p>
+        <p class="code" id="code"></p>
+      </div>
+      <canvas id="scratch"></canvas>
+    </section>
+
+    <p id="hint" class="hint">☝️ Raspá la zona plateada</p>
+    <button id="claim" class="claim" hidden>Reclamar por WhatsApp</button>
+    <button id="again" class="again" hidden>Ver mi premio otra vez</button>
+
+    <section class="rules">
+      <b>Importante:</b> mostrános el código al retirar. Un premio por persona. Válido hasta la fecha que indiques.
+    </section>
+  </main>
+  <script src="premios.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
